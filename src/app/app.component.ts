@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'e-commerce';
+
+  feateredSelected: string;
+
+  onNavigate(path: string) {
+    this.feateredSelected = path
+  }
 }

@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-xs-10">
-        <app-shopping-edit />
+        <app-shopping-edit (itemAdded)="ingredints.push($event)" />
         <hr>
         <ul class="list-group">
             <a  class="list-group-item"
