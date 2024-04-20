@@ -22,7 +22,7 @@ export class ShoppingEditComponent {
     const newIngredient = new Ingredient(this.name.nativeElement.value, this.amount.nativeElement.value)
 
 
-    this.shoppingListService.addIngredients(newIngredient)
+    this.shoppingListService.addIngredient(newIngredient)
 
     
   }

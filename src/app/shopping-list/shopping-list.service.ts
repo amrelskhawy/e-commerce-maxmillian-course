@@ -11,11 +11,17 @@ export class ShoppingListService {
   ]
 
   getIngredients() {
-    return this.ingredints.slice()
+    return this.ingredints.slice() 
   }
 
-  addIngredients(ingredint: Ingredient) {
-    this.ingredints.push(ingredint)
+  addIngredient(ingredient: Ingredient) {
+    this.ingredints.push(ingredient)
     this.addedIngredient.emit(this.ingredints.slice())
   }
+
+  addIngredients(ingredients: Ingredient[]) {
+    this.ingredints.push(...ingredients)
+    this.addedIngredient.emit(this.ingredints.slice())
+  }
+  
 }
